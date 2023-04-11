@@ -9,26 +9,31 @@ export const MainStyles = styled.main`
     background-color: black;
     padding: 0px;
 
-    .bottle{
-      width: 45%;
-      height: 100%;
-      background-image: url('./backgrounds/PowerRadeOrangeBg.png');
+    .bg-cont{
+      width: 100vw;
+      height: 100vh;
+      background-image: url('./bg.jpg');
+      // background-color: rgba(0, 0, 0, 1); /* Define um fundo preto com 50% de opacidade */
+      // opacity: 0.5; /* Define a opacidade do elemento como 100% */
       background-size: cover;
-      background-repeat: no-repeat;
-      margin-left: -9px;
+      background-repeat: no-repeat:
       display: flex;
-      align-items: end;
 
-      .imgBottle{
-        width: auto;
-        height: 85%;
-        filter: drop-shadow(black 10px 10px 15px);
+
+
+      .img-powerade{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          width: auto;
+          height: 60%;
+          opacity: 1;
+        }
       }
-    }
-  
-    .bg-text{
-      width: 55%;
-      height: 100%;
     }
   }
 `;
