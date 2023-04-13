@@ -5,6 +5,10 @@
   font-family: "Druk-Italic";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "Druk-Italic";
   src: url("./fonts/Druk-Italic.otf");

@@ -25,7 +25,7 @@
 		stroke-miterlimit:5;
 		stroke-dasharray: 200;
 		stroke-dashoffset: 200;
-		animation: lineGrow 9s infinite ease-out;
+		animation: lineGrow 40s infinite ease-out;
 	}
 
 	.st0:hover{

@@ -85,24 +85,9 @@ export const NavBarStyles = styled.nav`
     }
   }
 
-  .socialMedia ul li img.facebook:hover {
-    content: url('./socialMedia/facebook-hover.svg');
+  .navbar-scrolled{
+    background-color: black;
   }
   
-  .socialMedia ul li img.twitter:hover {
-    content: url('./socialMedia/twitter-hover.svg');
-  }
-  
-  .socialMedia ul li img.youtube:hover {
-    content: url('./socialMedia/youtube-hover.svg');
-  }
-  
-  .socialMedia ul li img.instagram:hover {
-    content: url('./socialMedia/instagram-hover.svg');
-  }
-  
-  .socialMedia ul li img.profile-user:hover {
-    content: url('./socialMedia/profile-user-hover.svg');
-  }
   
 `;

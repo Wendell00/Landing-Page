@@ -1,15 +1,28 @@
 import { NavBarStyles } from './styles'
-import { useState } from 'react';
+import { ImageHover } from './socialMedia/index'
+import { useEffect, useState } from 'react'
 
 export const NavBar = () =>{
+    const [navClass, setNavClass] = useState('');
 
-    const handleMouseEnter = (): any => {
-        console.log('oi')
-      };
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const handleScroll = () => {
+        if (window.scrollY > 0) {
+        setNavClass('navbar-scrolled');
+        } else {
+        setNavClass('');
+        }
+    };
   
     return(
         <NavBarStyles>
-            <div className='navContainer'>
+            <div className={`navContainer ${navClass}`}>
                 <div className='p1'>
                     <div className='logo'>
                         <img src="./powerade-logo.png" alt="" />
@@ -25,13 +38,21 @@ export const NavBar = () =>{
 
                 <div className='socialMedia'>
                     <ul>
-                        <li onMouseEnter={handleMouseEnter()}>
-                            <img className='facebook' src='./socialMedia/facebook.svg'/>
+                        <li>
+                            <ImageHover social='facebook'/>
                         </li>
-                        <li><img className='twitter' src="./socialMedia/twitter.svg"/></li>
-                        <li><img className='youtube' src="./socialMedia/youtube.svg"/></li>
-                        <li><img className='instagram' src="./socialMedia/instagram.svg"/></li>
-                        <li><img className='profile-user' src="./socialMedia/profile-user.svg"/></li>
+                        <li>
+                            <ImageHover social='twitter'/>
+                        </li>
+                        <li>
+                            <ImageHover social='youtube'/>
+                        </li>
+                        <li>
+                            <ImageHover social='instagram'/>
+                        </li>
+                        <li>
+                            <ImageHover social='profile-user'/>
+                        </li>
                     </ul>
                 </div>
             </div>
