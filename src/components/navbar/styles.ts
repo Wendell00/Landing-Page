@@ -9,6 +9,7 @@ export const NavBarStyles = styled.nav`
     background-color: transparent;
     display: flex;
     padding: 0 2rem;
+    transition: .3s;
     
     .p1{
       width: 70%;
@@ -45,7 +46,7 @@ export const NavBarStyles = styled.nav`
   
           li{
             font-weight: 300;
-            font-size: 1em;
+            font-size: 1.2em;
             cursor: pointer;
         
             :hover{
