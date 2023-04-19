@@ -48,6 +48,7 @@ export const NavBarStyles = styled.nav`
             font-weight: 300;
             font-size: 1.2em;
             cursor: pointer;
+            font-family: "sans-serif";
         
             :hover{
               color: #04adee;
