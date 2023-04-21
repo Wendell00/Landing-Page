@@ -13,3 +13,5 @@ body {
   font-family: "Druk-Italic";
   src: url("./fonts/druk-super-italic.otf");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
