@@ -2,6 +2,7 @@ import { SectionStyles } from "./styles";
 import { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from 'swiper';
 
 // Import Swiper styles
 import "swiper/css";
@@ -31,11 +32,14 @@ export const SectionProducts = () => {
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
-              navigation
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
+              navigation={{
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+              }}
             >
               <SwiperSlide>
                 <div className="p1">
@@ -117,6 +121,8 @@ export const SectionProducts = () => {
                 <div className="p1"></div>
                 <div className="p2 greenBg"></div>
               </SwiperSlide>
+              <div className="swiper-button-prev"></div>
+              <div className="swiper-button-next"></div>
             </Swiper>
           </div>
         </div>

@@ -164,6 +164,12 @@ export const SectionStyles = styled.section`
         }
     }
 
+    .swiper-button-prev{
+        width: 30px;
+        height: 30px;
+        font-size: 2em;
+    }
+
     .blackBg{
         background-color: #000;
     }
