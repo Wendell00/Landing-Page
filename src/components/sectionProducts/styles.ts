@@ -33,11 +33,8 @@ export const SectionStyles = styled.section`
                 .swiper{
                     height: 100%;   
                     border-radius: 60px;
-                    border: 1px solid black;
                     background-color: rgba(255,255,255, .6);
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-
                     
                     .swiper-wrapper{
                         height: 100%;
@@ -164,11 +161,6 @@ export const SectionStyles = styled.section`
         }
     }
 
-    .swiper-button-prev{
-        width: 30px;
-        height: 30px;
-        font-size: 2em;
-    }
 
     .blackBg{
         background-color: #000;
@@ -219,5 +211,63 @@ export const SectionStyles = styled.section`
 
     .colorWhite{
         color: white;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    }
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+    }
+    .swiper-button-prev.swiper-button-hidden,
+    .swiper-button-next.swiper-button-hidden {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+    }
+    .swiper-navigation-disabled .swiper-button-prev,
+    .swiper-navigation-disabled .swiper-button-next {
+    display: none !important;
+    }
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: 2em;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+    }
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 10px);
+    left: auto;
+    }
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
     }
 `;
