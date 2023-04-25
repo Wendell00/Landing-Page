@@ -1,12 +1,5 @@
 import { SectionStyles } from "./styles";
 import { useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from 'swiper';
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-flip";
 
 export const SectionProducts = () => {
 
@@ -29,19 +22,6 @@ export const SectionProducts = () => {
         </div>
         <div className="section-products-container">
           <div className="section-1">
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              scrollbar={{ draggable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-              navigation={{
-                prevEl: '.swiper-button-prev',
-                nextEl: '.swiper-button-next',
-              }}
-            >
-              <SwiperSlide>
                 <div className="p1">
                   <img src={bottle50} alt="" />
                 </div>
@@ -77,8 +57,6 @@ export const SectionProducts = () => {
                     </div>
                   </div>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
               <div className="p1">
                   <img src={bottleZero} alt="" />
                 </div>
@@ -107,23 +85,14 @@ export const SectionProducts = () => {
                         water, less than 1% of: citric acid, salt and mono-potassium phosphate and magnesium chloride and calcium chloride (electrolyte sources), natural flavors, sucralose, acesulfame potassium, vitamin b3 (niacinamide), vitamin b6 (pyridoxine hydrochloride), vitamin b12 (cyanocobalamin), blue 1, ascorbic acid (to protect taste), calcium disodium edta (to protect color).
                         </p>
                     </div>
-                    
                   </div>
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
                 <div className="p1">
                   <img src="./productBars.png" alt="" />
                 </div>
                 <div className="p2 blackBg"></div>
-              </SwiperSlide>
-              <SwiperSlide>
                 <div className="p1"></div>
                 <div className="p2 greenBg"></div>
-              </SwiperSlide>
-              <div className="swiper-button-prev"></div>
-              <div className="swiper-button-next"></div>
-            </Swiper>
           </div>
         </div>
       </div>
