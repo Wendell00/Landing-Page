@@ -35,6 +35,8 @@ export const SectionStyles = styled.section`
                     border-radius: 60px;
                     background-color: rgba(255,255,255, .6);
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
                     
                     .swiper-wrapper{
                         height: 100%;
@@ -160,7 +162,6 @@ export const SectionStyles = styled.section`
             }
         }
     }
-
 
     .blackBg{
         background-color: #000;
