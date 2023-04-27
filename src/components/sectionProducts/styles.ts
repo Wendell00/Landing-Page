@@ -23,28 +23,23 @@ export const SectionStyles = styled.section`
             justify-content: center;
             align-items: center;
             
-
             .section-1{
                 width: 86%;
                 height: 100%;
                 border-radius: 60px;
                 
-
                 .swiper{
                     height: 100%;   
                     border-radius: 60px;
                     background-color: rgba(255,255,255, .6);
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-
-                    
                     .swiper-wrapper{
                         height: 100%;
     
                         .swiper-slide{
                             height: 100%;
                             display: flex;
-
 
                             .p1{
                                 width: 35%;
@@ -66,7 +61,6 @@ export const SectionStyles = styled.section`
                                 display: flex;
                                 align-items: center;
                                 justify-content: end;
-                                
 
                                 .textContainer{
                                     width: 80%;
@@ -74,13 +68,11 @@ export const SectionStyles = styled.section`
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    
-                                    
+                                        
                                     .containerContent{
                                         width: 100%;
                                         height: 100%;
-
-                                        
+ 
                                         h1{
                                             font-size 3em;
                                             color: black;
