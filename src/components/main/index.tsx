@@ -2,8 +2,8 @@ import { MainStyles } from './styles'
 
 import React, {FC} from 'react';
 
-
 export const Main = () =>{
+    
     interface Props {
         videoSrc: string;
       }
@@ -13,7 +13,6 @@ export const Main = () =>{
           <source src={videoSrc} type="video/mp4"/>
         </video>
       );
-
 
     return(
         <MainStyles>
