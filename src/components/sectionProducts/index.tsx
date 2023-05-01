@@ -2,10 +2,14 @@ import { SectionStyles } from "./styles";
 import { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import {Navigation, Pagination, Autoplay} from 'swiper'
+import { EffectFade } from "swiper";
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-flip";
+import "swiper/css/effect-fade";
 
 export const SectionProducts = () => {
 
@@ -29,10 +33,18 @@ export const SectionProducts = () => {
         <div className="section-products-container">
           <div className="section-1">
             <Swiper
+              modules={[Navigation, Pagination, Autoplay, EffectFade]}
+              grabCursor={true}
+              effect={"fade"}
               spaceBetween={50}
               slidesPerView={1}
               navigation
+              autoplay={{
+                delay: 15000,
+                disableOnInteraction: false,
+              }}
               pagination={{ clickable: true }}
+              loop
               scrollbar={{ draggable: true }}
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}

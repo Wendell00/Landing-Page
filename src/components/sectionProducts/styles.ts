@@ -31,8 +31,8 @@ export const SectionStyles = styled.section`
                 .swiper{
                     height: 100%;   
                     border-radius: 60px;
-                    background-color: rgba(255,255,255, .6);
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    // background-color: rgba(255,255,255, .6);
+                    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
                     .swiper-wrapper{
                         height: 100%;
@@ -40,6 +40,7 @@ export const SectionStyles = styled.section`
                         .swiper-slide{
                             height: 100%;
                             display: flex;
+                            background-color: white;
 
                             .p1{
                                 width: 35%;
@@ -154,6 +155,27 @@ export const SectionStyles = styled.section`
             }
         }
     }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      
+      .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: black;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      
+      .swiper-pagination-bullet-active {
+        background-color: white;
+      }
+
+      
 
     .blackBg{
         background-color: #000;
