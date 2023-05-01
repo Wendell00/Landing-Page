@@ -35,7 +35,7 @@ export const Footer = () => {
         </div>
       </footer>
       <div className="credits">
-        <p> <a href="https://github.com/Wendell00"> Developed by Wendell Borges</a> </p>
+        <p> <a href="https://github.com/Wendell00" target="_blank"> Developed by Wendell Borges</a> </p>
       </div>
     </FooterStyles>
   );

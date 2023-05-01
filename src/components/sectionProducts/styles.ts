@@ -51,6 +51,7 @@ export const SectionStyles = styled.section`
                                 img{
                                     width: auto;
                                     height: 90%;
+                                    filter: drop-shadow(8px 4px 10px black);
                                 }
 
                                 .barsProduct{

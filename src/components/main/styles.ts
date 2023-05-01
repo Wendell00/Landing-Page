@@ -10,6 +10,7 @@ export const MainStyles = styled.main`
     background-color: black;
     padding: 0px;
     z-index: -2;
+    justify-content: center;
     
 
     .bg-cont{
@@ -20,6 +21,7 @@ export const MainStyles = styled.main`
       // background-size: cover;
       // background-repeat: no-repeat;
       display: flex;
+      justify-content: center;
 
       #video-background {
         position: absolute;
@@ -33,29 +35,32 @@ export const MainStyles = styled.main`
       }
 
       .img-powerade{
-        width: 50%;
+        width: 1200px;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: center;
-
+        justify-content: center;
+        align-items: start;
+        padding: 0;
+        
+        
         img{
-          width: auto;
-          height: 80%;
+          width: 800px;
           max-width: 100%;
           height: auto;
           opacity: 1;
-          margin-top: 80px;
+          margin-top: -60px;
+          transform: translateX(-110px);
         }
 
         h2{
+          width: 350px;
           text-align: center;
           font-size: 3em;
           color: white;
           text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
             0px -4px 10px rgba(255,255,255,0.3);
-          margin-top: -80px;
+          margin-top: -120px;
         }
       }
 

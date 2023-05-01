@@ -23,37 +23,39 @@ export const NavBar = () =>{
     return(
         <NavBarStyles>
             <div className={`navContainer ${navClass}`}>
-                <div className='p1'>
-                    <div className='logo'>
-                        <img src="./powerade-logo.png" alt="" />
+                <div className="container2">
+                    <div className='p1'>
+                        <div className='logo'>
+                            <img src="./powerade-logo.png" alt="" />
+                        </div>
+                        <div className='anchorList'>
+                            <ul>
+                                <li> <a href="#products">PRODUCT</a> </li>
+                                <li> <a href="#partners">PARTNERS</a> </li>
+                                <li> <a href="#contact">CONTACT US</a> </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className='anchorList'>
+
+                    <div className='socialMedia'>
                         <ul>
-                            <li> <a href="#products">PRODUCT</a> </li>
-                            <li> <a href="#partners">PARTNERS</a> </li>
-                            <li> <a href="#contact">CONTACT US</a> </li>
+                            <li>
+                                <ImageHover social='facebook'/>
+                            </li>
+                            <li>
+                                <ImageHover social='twitter'/>
+                            </li>
+                            <li>
+                                <ImageHover social='youtube'/>
+                            </li>
+                            <li>
+                                <ImageHover social='instagram'/>
+                            </li>
+                            <li>
+                                <ImageHover social='profile-user'/>
+                            </li>
                         </ul>
                     </div>
-                </div>
-
-                <div className='socialMedia'>
-                    <ul>
-                        <li>
-                            <ImageHover social='facebook'/>
-                        </li>
-                        <li>
-                            <ImageHover social='twitter'/>
-                        </li>
-                        <li>
-                            <ImageHover social='youtube'/>
-                        </li>
-                        <li>
-                            <ImageHover social='instagram'/>
-                        </li>
-                        <li>
-                            <ImageHover social='profile-user'/>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </NavBarStyles>
