@@ -29,9 +29,9 @@ export const NavBar = () =>{
                     </div>
                     <div className='anchorList'>
                         <ul>
-                            <li>PRODUCTS</li>
-                            <li>PARTNERS</li>
-                            <li>CONTACT US</li>
+                            <li> <a href="#products">PRODUCT</a> </li>
+                            <li> <a href="#partners">PARTNERS</a> </li>
+                            <li> <a href="#contact">CONTACT US</a> </li>
                         </ul>
                     </div>
                 </div>

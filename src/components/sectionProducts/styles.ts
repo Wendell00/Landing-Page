@@ -4,7 +4,7 @@ export const SectionStyles = styled.section`
     .productsContainer{
         width: 100vw;
         height: 100vh;
-        background-image: url('./PowerRadeOrangeBg.png');
+        background-image: url('./backgroundWhite.png');
         padding-top: 100px;
         
         .title-products{
@@ -31,8 +31,8 @@ export const SectionStyles = styled.section`
                 .swiper{
                     height: 100%;   
                     border-radius: 60px;
-                    // background-color: rgba(255,255,255, .6);
-                    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    background-color: rgba(255,255,255, .6);
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
                     .swiper-wrapper{
                         height: 100%;
@@ -40,7 +40,6 @@ export const SectionStyles = styled.section`
                         .swiper-slide{
                             height: 100%;
                             display: flex;
-                            background-color: white;
 
                             .p1{
                                 width: 35%;
@@ -52,6 +51,10 @@ export const SectionStyles = styled.section`
                                 img{
                                     width: auto;
                                     height: 90%;
+                                }
+
+                                .barsProduct{
+                                    transform: scale(1.2) translateX(40px);
                                 }
                             }
 
@@ -76,10 +79,8 @@ export const SectionStyles = styled.section`
  
                                         h1{
                                             font-size 3em;
-                                            color: black;
                                             margin-right: 30px;
                                             text-align: center;
-                                            
                                         }
     
                                         .description{
@@ -138,7 +139,6 @@ export const SectionStyles = styled.section`
                                         }
     
                                         .ingredients{
-                                            color: black;
                                             font-weight: bold;
                                             text-align: center;
                                             font-size: 0.8em;
@@ -178,7 +178,7 @@ export const SectionStyles = styled.section`
       
 
     .blackBg{
-        background-color: #000;
+        background-color: #333;
     }
 
     
@@ -193,11 +193,15 @@ export const SectionStyles = styled.section`
 
     
     .greenBg{
-        background-color: green;
+        background-color: #E6DD00;
     }
 
     .whiteCircle{
         background-color: #CEC2D0;
+    }
+
+    .limeCircle{
+        background-color: #E6DD00;
     }
 
     .blueCircle{
@@ -226,5 +230,9 @@ export const SectionStyles = styled.section`
 
     .colorWhite{
         color: white;
+    }
+
+    .mt-20{
+        margin-top: 50px
     }
 `;

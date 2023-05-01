@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { NavBar } from './components/navbar'
 import { Main } from './components/main'
 import { SectionProducts } from './components/sectionProducts' 
+import { SectionPartners } from './components/sectionPartners'
+import { Footer } from './components/footer'
+
 import './App.css'
 
 function App() {
@@ -10,6 +13,8 @@ function App() {
       <NavBar />
       <Main />
       <SectionProducts/>
+      <SectionPartners/>
+      <Footer/>
     </div>
   )
 }

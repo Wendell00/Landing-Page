@@ -10,6 +10,7 @@ export const NavBarStyles = styled.nav`
     display: flex;
     padding: 0 2rem;
     transition: .3s;
+    z-index: 999;
     
     .p1{
       width: 70%;
@@ -44,11 +45,14 @@ export const NavBarStyles = styled.nav`
           align-items: center;
           justify-content: space-around;
   
-          li{
-            font-weight: 300;
-            font-size: 1.2em;
+          li, a{
+            font-weight: 600;
+            font-size: 1.1em;
             cursor: pointer;
-            font-family: "sans-serif";
+            font-family: 'Montserrat', sans-serif;
+            font-style: italic;
+            text-decoration: none;
+            color: white;
         
             :hover{
               color: #04adee;
