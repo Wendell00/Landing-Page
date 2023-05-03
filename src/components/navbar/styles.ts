@@ -11,6 +11,55 @@ export const NavBarStyles = styled.nav`
     justify-content: center;
     transition: .3s;
     z-index: 999;
+
+    .navContainerMobile{
+      width: 100vw;
+      height: 225px;
+      background-color: black;
+      position: absolute;
+      top: 90px;
+
+      li{
+        width: 100%;
+        height: 56px;
+        border-top: 2px solid white;
+        display: flex
+        justify-content: start;
+        padding: 10px 0 20px 8.5%;
+        align-items: center;
+        list-style: none;
+        line-height: 34px;
+
+        a{
+          font-weight: 600;
+          font-size: 1.1em;
+          cursor: pointer;
+          font-family: 'Montserrat', sans-serif;
+          text-decoration: none;
+          color: white;
+
+          :hover{
+            color: #04adee;
+          }
+        }
+      }
+
+      .socialMediaMobile{
+        width: 100%;
+        height: 56px;
+        padding: 10px 0 10px 8.5%;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: auto;
+            height: 100%;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+      }
+    }
     
     .container-flex{
       width: 1000px;
@@ -33,6 +82,7 @@ export const NavBarStyles = styled.nav`
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
 
         @media screen and (min-width: 1030px){
           display: none;
@@ -115,6 +165,7 @@ export const NavBarStyles = styled.nav`
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
 
         @media screen and (min-width: 1030px){
           display: none;
@@ -159,8 +210,16 @@ export const NavBarStyles = styled.nav`
     
   }
 
-  .navbar-scrolled{
+  .navbar-scrolled, .menuMobileActive{
     background-color: black;
+  }
+
+  .dis-block{
+    display: block;
+  }
+
+  .dis-none{
+    display: none;
   }
   
 `;
