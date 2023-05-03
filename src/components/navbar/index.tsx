@@ -1,8 +1,9 @@
 import { NavBarStyles } from './styles'
-import { ImageHover } from './socialMedia/index'
+import { ImageHover } from './socialMedia/index' // Importando 
 import { useEffect, useState } from 'react'
 
 export const NavBar = () =>{
+
     const [navClass, setNavClass] = useState('');
 
     useEffect(() => {
@@ -19,22 +20,31 @@ export const NavBar = () =>{
         setNavClass('');
         }
     };
-  
+
     return(
         <NavBarStyles>
             <div className={`navContainer ${navClass}`}>
-                <div className="container2">
-                    <div className='p1'>
+                <div className="container-flex">
+
+                    <div className="menu-mobile">
+                        <img src="./menu-icon-mobile.svg" />
+                    </div>
+
+                    <div className='logoAndNav'>
                         <div className='logo'>
                             <img src="./powerade-logo.png" alt="" />
                         </div>
-                        <div className='anchorList'>
+                        <div className='navList'>
                             <ul>
                                 <li> <a href="#products">PRODUCT</a> </li>
                                 <li> <a href="#partners">PARTNERS</a> </li>
                                 <li> <a href="#contact">CONTACT US</a> </li>
                             </ul>
                         </div>
+                    </div>
+
+                    <div className="profile-mobile">
+                        <img src="./profile-icon-mobile.svg" />
                     </div>
 
                     <div className='socialMedia'>

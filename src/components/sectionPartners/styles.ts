@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SectionStyles = styled.section`
     .partnersContainer{
         width: 100vw;
-        height: 100vh;
+        height: 749px;
         background-repeat: no-repeat;
         padding-top: 100px;
         background-color: black;
@@ -72,7 +72,7 @@ export const SectionStyles = styled.section`
 
     .heigh20vh{
         width: 100vw;
-        height: 20vh;
+        height: 170px;
         background-image: url('./backgroundWhite.png');
         background-position: center center;
     }

@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <FooterStyles>
       <div className="topFooter" id="contact">
-        <div className="title-partners">
+        <div className="title-footer">
               <h1>
                 <b>FIND POWERADE NEAR YOU</b>
               </h1>

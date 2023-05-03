@@ -8,7 +8,7 @@ export const FooterStyles = styled.footer`
         background-repeat: no-repeat;
         background-size: 100% 100%;
 
-        .title-partners{
+        .title-footer{
             width: 100%;
             height: 50px;
             padding-left: 105px;

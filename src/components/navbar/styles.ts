@@ -12,33 +12,76 @@ export const NavBarStyles = styled.nav`
     transition: .3s;
     z-index: 999;
     
-    .container2{
-      width: 1200px;
+    .container-flex{
+      width: 1000px;
       height: 90px;
       display: flex;
+      justify-content: space-evenly;
 
-      .p1{
-        width: 70%;
+      @media screen and (min-width: 1200px){
+          width: 1200px;
+      }
+
+      @media screen and (min-width: 1030px){
+        width: 1200px;
+        justify-content: flex-start;
+      }
+
+      .menu-mobile{
+        width: 20%;
         height: 100%;
         display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 1030px){
+          display: none;
+        }
+
+        img{
+          height: 40px;
+          margin-top: -6px;
+        }
+      }
+
+      .logoAndNav{
+        width: 60%;
+        height: 100%;
+        display: flex;
+
+        @media screen and (min-width: 1030px){
+          width: 70%;
+        }
   
         .logo{
-          width: 210px;
+          width: 100%;
           height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          @media screen and (min-width: 1030px){
+            width: 210px;
+          }
       
           img{
             width: 200px;
           }
         }
       
-        .anchorList{
-          margin-left: 50px;
+        .navList{
+          margin-left: 0px;
           height: 100%;
           width: 500px;
-          display: flex;
+          display: none;
+
+          @media screen and (min-width: 1200px){
+            margin-left: 50px;
+          }
+
+          @media screen and (min-width: 1030px){
+            display: flex;
+          }
       
           ul{
             width: 100%;
@@ -55,7 +98,6 @@ export const NavBarStyles = styled.nav`
               font-size: 1.1em;
               cursor: pointer;
               font-family: 'Montserrat', sans-serif;
-              font-style: italic;
               text-decoration: none;
               color: white;
           
@@ -66,13 +108,32 @@ export const NavBarStyles = styled.nav`
           }
         }
       }
-      
-  
-      .socialMedia{
-        width: 30%;
+
+      .profile-mobile{
+        width: 20%;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 1030px){
+          display: none;
+        }
+
+        img{
+          height: 30px;
+        }
+      }
+      
+      .socialMedia{
+        width: 30%;
+        height: 100%;
+        display: none;
+        align-items: center;
+
+        @media screen and (min-width: 1030px){
+          display: flex;
+        }
   
         ul{
           width: 100%;
@@ -101,6 +162,5 @@ export const NavBarStyles = styled.nav`
   .navbar-scrolled{
     background-color: black;
   }
-  
   
 `;

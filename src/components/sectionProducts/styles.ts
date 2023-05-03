@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const SectionStyles = styled.section`
     .productsContainer{
         width: 100vw;
-        height: 100vh;
+        height: 749px;
         background-image: url('./backgroundWhite.png');
         padding-top: 100px;
         
         .title-products{
             font-size: 2em;
             font-weight: bold;
-            width: 100vw;
+            width: 1200px;
             height: 50px;
-            padding-left: 105px;
+            margin: 0 auto;
         }
 
         .section-products-container{
@@ -24,7 +24,7 @@ export const SectionStyles = styled.section`
             align-items: center;
             
             .section-1{
-                width: 86%;
+                width: 1200px;
                 height: 100%;
                 border-radius: 60px;
                 
