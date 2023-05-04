@@ -41,14 +41,17 @@ export const MainStyles = styled.main`
         }
             
         img{
-          width: 55%;
-          min-width: 500px;
-          max-width: 100%;
+          width: 100%;
           height: auto;
           opacity: 1;
           display: flex;
           align-self: center;
           justify-self: center;
+
+          @media screen and (min-width: 500px){
+            width: 55%;
+            min-width: 500px;
+          }
 
           @media screen and (min-width: 1200px){
             width: 66%;
