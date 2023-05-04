@@ -42,7 +42,7 @@ export const NavBar = () =>{
     return(
         <NavBarStyles>
             <div className={`navContainer ${navClass} 
-                    ${menuMobile ? 'menuMobileActive' : ' '}`}>
+                    ${menuMobile && widthWindow < 1029 ? 'menuMobileActive' : ' '}`}>
 
                 <div className={`navContainerMobile
                     ${menuMobile ? 'dis-block' : 'dis-none'}

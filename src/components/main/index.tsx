@@ -8,22 +8,24 @@ export const Main = () =>{
         videoSrc: string;
       }
       
-      const VideoPlayer: FC<Props> = ({videoSrc}) => (
+    const VideoPlayer: FC<Props> = ({videoSrc}) => (
         <video id="video-background" loop muted autoPlay={true}>
-          <source src={videoSrc} type="video/mp4"/>
+            <source src={videoSrc} type="video/mp4"/>
         </video>
-      );
+    );
 
     return(
         <MainStyles>
             <div className='mainContainer'>
+
                 <div className='bg-cont'>
                     <div className='img-powerade'>
-                        <img src="./Powerade.svg" alt="" />
+                        <img src="./Powerade.svg" alt="Logo" />
                         <h2>That's some <br/> kind of power</h2>
                     </div>
                     <VideoPlayer videoSrc='./bgVideo.mp4'/>
                 </div>
+
             </div>
         </MainStyles>
     )

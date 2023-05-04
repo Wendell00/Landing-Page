@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-
 export const MainStyles = styled.main`
+
   .mainContainer{
     position: relative;
     width: 100vw;
@@ -12,14 +12,10 @@ export const MainStyles = styled.main`
     z-index: -2;
     justify-content: center;
     
-
     .bg-cont{
       width: 100vw;
       height: 100vh;
       position: fixed;
-      // background-image: url('./bg.jpg');
-      // background-size: cover;
-      // background-repeat: no-repeat;
       display: flex;
       justify-content: center;
 
@@ -31,39 +27,53 @@ export const MainStyles = styled.main`
         height: 100%;
         object-fit: cover;
         z-index: -1;
-        
       }
 
       .img-powerade{
-        width: 1200px;
+        width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding: 0;
-        
-        
+        padding-top: 70px;
+
+        @media screen and (min-width: 1200px){
+          align-items: start;
+          width: 1200px;
+          padding-top: 2%;
+        }
+            
         img{
-          width: 800px;
+          width: 55%;
+          min-width: 500px;
           max-width: 100%;
           height: auto;
           opacity: 1;
-          margin-top: -60px;
-          transform: translateX(-110px);
+          display: flex;
+          align-self: center;
+          justify-self: center;
+
+          @media screen and (min-width: 1200px){
+            width: 66%;
+            margin-left: 0;
+            transform: translateX(-110px);
+          }
         }
 
         h2{
-          width: 350px;
+          width: 70%;
+          max-width: 350px;
           text-align: center;
-          font-size: 3em;
+          font-size: 2.2em;
           color: white;
           text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
             0px -4px 10px rgba(255,255,255,0.3);
-          margin-top: -120px;
+          margin-top: -100px;
+
+          @media screen and (min-width: 1200px){
+            font-size: 3em;
+            margin-top: -160px;
+            width: 350px;
+          }
         }
       }
-
     }
   }
 `;
