@@ -45,10 +45,18 @@ export const MainStyles = styled.main`
           height: auto;
           opacity: 1;
           display: flex;
-          align-self: center;
+          align-self: end;
           justify-self: center;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
 
           @media screen and (min-width: 500px){
+            position: static;
+            transform: translateX(0) translateY(0);
+            left: auto;
+            top: auto;
             width: 55%;
             min-width: 500px;
           }
@@ -68,7 +76,20 @@ export const MainStyles = styled.main`
           color: white;
           text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
             0px -4px 10px rgba(255,255,255,0.3);
-          margin-top: -100px;
+          position: absolute;
+          left: 40%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+
+          @media screen and (min-width: 500px){
+            transform: translateX(0) translateY(0);
+            margin-top: -100px;
+            position: static;
+            left: auto;
+            top: auto;
+            font-size: 2.2em;
+            width: 350px;
+          }
 
           @media screen and (min-width: 1200px){
             font-size: 3em;
