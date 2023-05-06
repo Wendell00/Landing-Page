@@ -49,7 +49,7 @@ export const MainStyles = styled.main`
           justify-self: center;
           position: absolute;
           left: 50%;
-          top: 50%;
+          top: 45%;
           transform: translateX(-50%) translateY(-50%);
 
           @media screen and (min-width: 500px){
@@ -78,7 +78,7 @@ export const MainStyles = styled.main`
             0px -4px 10px rgba(255,255,255,0.3);
           position: absolute;
           left: 40%;
-          top: 50%;
+          top: 60%;
           transform: translateX(-50%) translateY(-50%);
 
           @media screen and (min-width: 500px){
