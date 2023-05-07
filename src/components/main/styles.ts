@@ -30,11 +30,11 @@ export const MainStyles = styled.main`
       }
 
       .img-powerade{
-        width: 100%;
+        width: 100vw;
         height: 100%;
         padding-top: 70px;
 
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: 1030px){
           align-items: start;
           width: 1200px;
           padding-top: 2%;
@@ -61,7 +61,7 @@ export const MainStyles = styled.main`
             min-width: 500px;
           }
 
-          @media screen and (min-width: 1200px){
+          @media screen and (min-width: 1030px){
             width: 66%;
             margin-left: 0;
             transform: translateX(-110px);
