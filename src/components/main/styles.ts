@@ -48,9 +48,9 @@ export const MainStyles = styled.main`
           align-self: end;
           justify-self: center;
           position: absolute;
-          left: 50%;
-          top: 30%;
-          transform: translateX(-50%) translateY(-50%);
+          left: 50%; right: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%) scale(1.2);
 
           @media screen and (min-width: 500px){
             position: static;
@@ -78,7 +78,7 @@ export const MainStyles = styled.main`
             0px -4px 10px rgba(255,255,255,0.3);
           position: absolute;
           left: 40%;
-          top: 60%;
+          top: 65%;
           transform: translateX(-50%) translateY(-50%);
 
           @media screen and (min-width: 500px){

@@ -24,9 +24,15 @@ export const SectionStyles = styled.section`
             align-items: center;
             
             .section-1{
-                width: 1200px;
+                max-width: 1200px;
+                width: 100%;
                 height: 100%;
                 border-radius: 60px;
+
+                
+                @media screen and (min-width: 1200px){
+                    width: 1200px;
+                }
                 
                 .swiper{
                     height: 100%;   
