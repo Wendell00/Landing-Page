@@ -29,7 +29,6 @@ export const SectionStyles = styled.section`
                 height: 100%;
                 border-radius: 60px;
 
-                
                 @media screen and (min-width: 1200px){
                     width: 1200px;
                 }
@@ -96,26 +95,50 @@ export const SectionStyles = styled.section`
                                             font-size: 1.1em;
                                             font-family: 'Arial';
                                             width: 95%;
+                                            display: none;
+
+                                            @media screen and (min-width: 968px){
+                                                display: block;
+                                            }
                                         }
     
                                         .changeBottleContainer{
                                             width: 100%;
-                                            height: 150px;
+                                            height: auto;
+                                            margin-top: 0px;
                                             display: flex;
                                             justify-content: center;
+
+                                            @media (min-width: 967px) {
+                                                margin-top: 50px;
+                                                height: 120px;
+                                            }
                                     
                                             .circles-p1{
                                                 width: 100%;
-                                                display: flex;
-                                                align-items: center;
-                                                justify-content: space-around;
+                                                height: auto;
+                                                display: grid;
+                                                grid-template-columns: 2fr;
+                                                gap: 10px;
+
+                                                @media (min-width: 967px) {
+                                                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                                    height: 120px;
+                                                    grid-template-columns: repeat(2, 1fr);
+                                                    grid-template-rows: repeat(2, 1fr);
+                                                }
                                     
                                                 button{
-                                                    width: 64px;
-                                                    height: 64px;
+                                                    width: 60px;
+                                                    height: 60px;
                                                     border-radius: 100%;
                                                     border: 2px solid black;
                                                     cursor: pointer;
+                                                    
+                                                    @media screen and (min-width: 968px){
+                                                        width: 64px;
+                                                        height: 64px;
+                                                    }
                                                 }
                                             }
                                         }
@@ -137,6 +160,11 @@ export const SectionStyles = styled.section`
                                                 font-weight: bold;
                                                 font-size: 18px;
                                                 cursor: pointer;
+                                                display: none;
+    
+                                                @media screen and (min-width: 968px){
+                                                    display: block;
+                                                }
         
                                                 :hover{
                                                     background-color: transparent;
@@ -151,6 +179,11 @@ export const SectionStyles = styled.section`
                                             font-size: 0.8em;
                                             font-family: "Arial", "sans-serif";
                                             width: 95%;
+                                            display: none;
+    
+                                            @media screen and (min-width: 968px){
+                                                display: block;
+                                            }
                                         }
                                     }
                                 }
@@ -181,65 +214,4 @@ export const SectionStyles = styled.section`
       .swiper-pagination-bullet-active {
         background-color: white;
       }
-
-      
-
-    .blackBg{
-        background-color: #333;
-    }
-
-    
-    .blueBg{
-        background-color: #04adee;
-    }
-
-    
-    .whiteBg{
-        background-color: #CEC2D0;
-    }
-
-    
-    .greenBg{
-        background-color: #E6DD00;
-    }
-
-    .whiteCircle{
-        background-color: #CEC2D0;
-    }
-
-    .limeCircle{
-        background-color: #E6DD00;
-    }
-
-    .blueCircle{
-        background-color: #04adee;
-    }
-
-    .greenCircle{
-        background-color: #8CDA00;
-    }
-
-    .orangeCircle{
-        background-color: #FF6E00;
-    }
-
-    .purpleCircle{
-        background-color: #8149B9;
-    }
-
-    .redCircle{
-        background-color: #E30100;
-    }
-
-    .colorBlack{
-        color: black;
-    }
-
-    .colorWhite{
-        color: white;
-    }
-
-    .mt-20{
-        margin-top: 50px
-    }
 `;

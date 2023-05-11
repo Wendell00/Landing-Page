@@ -17,3 +17,61 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+
+.blackBg{
+  background-color: #333;
+}
+
+.blueBg{
+  background-color: #04adee;
+}
+
+
+.whiteBg{
+  background-color: #CEC2D0;
+}
+
+
+.greenBg{
+  background-color: #E6DD00;
+}
+
+.whiteCircle{
+  background-color: #CEC2D0;
+}
+
+.limeCircle{
+  background-color: #E6DD00;
+}
+
+.blueCircle{
+  background-color: #04adee;
+}
+
+.greenCircle{
+  background-color: #8CDA00;
+}
+
+.orangeCircle{
+  background-color: #FF6E00;
+}
+
+.purpleCircle{
+  background-color: #8149B9;
+}
+
+.redCircle{
+  background-color: #E30100;
+}
+
+.colorBlack{
+  color: black;
+}
+
+.colorWhite{
+  color: white;
+}
+
+.mt-20{
+  margin-top: 50px
+}

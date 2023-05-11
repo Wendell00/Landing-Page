@@ -34,11 +34,10 @@ export const SectionProducts = () => {
         <div className="section-products-container">
           <div className="section-1">
             <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
+              modules={[Pagination, Autoplay]}
               grabCursor={true}
               spaceBetween={50}
               slidesPerView={1}
-              navigation
               autoplay={{
                 delay: 15000,
                 disableOnInteraction: false,
