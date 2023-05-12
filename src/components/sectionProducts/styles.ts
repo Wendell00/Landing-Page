@@ -119,9 +119,14 @@ export const SectionStyles = styled.section`
                                         height: 100%;
  
                                         h1{
-                                            font-size 3em;
-                                            margin-right: 30px;
+                                            font-size 2.5em;
+                                            margin-right: 0px;
                                             text-align: center;
+
+                                            @media screen and (min-width: 968px){
+                                                font-size 3em;
+                                                margin-right: 30px;
+                                            }
                                         }
     
                                         .description{
@@ -154,9 +159,9 @@ export const SectionStyles = styled.section`
                                                 height: auto;
                                                 display: grid;
                                                 grid-template-columns: repeat(3, 1fr);
-                                                grid-template-rows: repeat(3, 1fr);
+                                                grid-template-rows: repeat(2, 1fr);
                                                 grid-column-gap: 0px;
-                                                grid-row-gap: 0px;
+                                                grid-row-gap: 20px;
 
                                                 @media (min-width: 967px) {
                                                     height: 120px;
@@ -168,8 +173,8 @@ export const SectionStyles = styled.section`
                                                 }
                                     
                                                 button{
-                                                    width: 60%;
-                                                    height: 8vw;
+                                                    width: 70%;
+                                                    height: 9.7vw;
                                                     border-radius: 100%;
                                                     border: 2px solid black;
                                                     cursor: pointer;
@@ -185,22 +190,22 @@ export const SectionStyles = styled.section`
                                                         grid-area: auto;
                                                     } 
                                                 }
-                                                .circle2 { grid-area: 1 / 3 / 2 / 4;
+                                                .circle2 { grid-area: 1 / 2 / 2 / 3;
                                                     @media screen and (min-width: 968px){
                                                         grid-area: auto;
                                                     }
                                                  }
-                                                .circle3 { grid-area: 2 / 2 / 3 / 3;
+                                                .circle3 { grid-area: 1 / 3 / 2 / 4;
                                                     @media screen and (min-width: 968px){
                                                         grid-area: auto;
                                                     }
                                                 }
-                                                .circle4 { grid-area: 3 / 1 / 4 / 2;
+                                                .circle4 { grid-area: 2 / 1 / 3 / 2;
                                                     @media screen and (min-width: 968px){
                                                         grid-area: auto;
                                                     }
                                                 }
-                                                .circle5 { grid-area: 3 / 3 / 4 / 4;
+                                                .circle5 { grid-area: 2 / 2 / 3 / 3;
                                                     @media screen and (min-width: 968px){
                                                         grid-area: auto;
                                                     }
