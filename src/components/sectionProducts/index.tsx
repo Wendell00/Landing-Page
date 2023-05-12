@@ -65,11 +65,11 @@ export const SectionProducts = () => {
 
                         <div className="changeBottleContainer">
                         <div className="circles-p1">
-                            <button className="blueCircle" onClick={() =>{handleClick('./bottle50/mountainberryblast.png', '50')}}></button>
-                            <button className="orangeCircle" onClick={() =>{handleClick('./bottle50/orange.png', '50')}}></button>
-                            <button className="whiteCircle" onClick={() =>{handleClick('./bottle50/whitecherry.png', '50')}}></button>
-                            <button className="greenCircle" onClick={() =>{handleClick('./bottle50/melon.png', '50')}}></button>
-                            <button className="purpleCircle" onClick={() =>{handleClick('./bottle50/grape.png', '50')}}></button>
+                            <button className="blueCircle circle1" onClick={() =>{handleClick('./bottle50/mountainberryblast.png', '50')}}></button>
+                            <button className="orangeCircle circle2" onClick={() =>{handleClick('./bottle50/orange.png', '50')}}></button>
+                            <button className="whiteCircle circle3" onClick={() =>{handleClick('./bottle50/whitecherry.png', '50')}}></button>
+                            <button className="greenCircle circle4" onClick={() =>{handleClick('./bottle50/melon.png', '50')}}></button>
+                            <button className="purpleCircle circle5" onClick={() =>{handleClick('./bottle50/grape.png', '50')}}></button>
                         </div>
                         </div>
 
@@ -99,11 +99,11 @@ export const SectionProducts = () => {
 
                         <div className="changeBottleContainer">
                         <div className="circles-p1">
-                            <button className="whiteCircle" onClick={() =>{handleClick('./productZero/zswhitecherry.png', 'zero')}}></button>
-                            <button className="blueCircle" onClick={() =>{handleClick('./productZero/zsmixedberry.png', 'zero')}}></button>
-                            <button className="orangeCircle" onClick={() =>{handleClick('./productZero/zsorange.png', 'zero')}}></button>
-                            <button className="redCircle" onClick={() =>{handleClick('./productZero/zsfruitpunch.png', 'zero')}}></button>
-                            <button className="purpleCircle" onClick={() =>{handleClick('./productZero/zsgrape.png', 'zero')}}></button>
+                            <button className="whiteCircle circle1" onClick={() =>{handleClick('./productZero/zswhitecherry.png', 'zero')}}></button>
+                            <button className="blueCircle circle2" onClick={() =>{handleClick('./productZero/zsmixedberry.png', 'zero')}}></button>
+                            <button className="orangeCircle circle3" onClick={() =>{handleClick('./productZero/zsorange.png', 'zero')}}></button>
+                            <button className="redCircle circle4" onClick={() =>{handleClick('./productZero/zsfruitpunch.png', 'zero')}}></button>
+                            <button className="purpleCircle circle5" onClick={() =>{handleClick('./productZero/zsgrape.png', 'zero')}}></button>
                         </div>
                         </div>
 
@@ -155,11 +155,11 @@ export const SectionProducts = () => {
 
                         <div className="changeBottleContainer">
                         <div className="circles-p1">
-                            <button className="limeCircle" onClick={() =>{handleClick('./power500ml/powerLime.png', 'power500')}}></button>
-                            <button className="orangeCircle" onClick={() =>{handleClick('./power500ml/powerOrange.png', 'power500')}}></button>
-                            <button className="purpleCircle" onClick={() =>{handleClick('./power500ml/powerPurple.png', 'power500')}}></button>
-                            <button className="blueCircle" onClick={() =>{handleClick('./power500ml/powerBlue.png', 'power500')}}></button>
-                            <button className="redCircle" onClick={() =>{handleClick('./power500ml/powerRed.png', 'power500')}}></button>
+                            <button className="limeCircle circle1" onClick={() =>{handleClick('./power500ml/powerLime.png', 'power500')}}></button>
+                            <button className="orangeCircle circle2" onClick={() =>{handleClick('./power500ml/powerOrange.png', 'power500')}}></button>
+                            <button className="purpleCircle circle3" onClick={() =>{handleClick('./power500ml/powerPurple.png', 'power500')}}></button>
+                            <button className="blueCircle circle4" onClick={() =>{handleClick('./power500ml/powerBlue.png', 'power500')}}></button>
+                            <button className="redCircle circle5" onClick={() =>{handleClick('./power500ml/powerRed.png', 'power500')}}></button>
                         </div>
                         </div>
 
