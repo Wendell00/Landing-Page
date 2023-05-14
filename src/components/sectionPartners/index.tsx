@@ -6,10 +6,12 @@ export const SectionPartners = () => {
   return (
     <SectionStyles>
       <div className="partnersContainer" id="partners">
-        <div className="title-partners">
-            <h1>
-              <b>PROPERTY </b> PARTNERSHIPS
-            </h1>
+        <div className="title-partners-container">
+          <div className="title-partners">
+              <h1>
+                <b>PROPERTY </b> PARTNERSHIPS
+              </h1>
+          </div>
         </div>
         <div className="container">
           <div className="column">

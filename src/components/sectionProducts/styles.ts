@@ -43,7 +43,7 @@ export const SectionStyles = styled.section`
             
             .section-1{
                 max-width: 1200px;
-                width: 100%;
+                width: 90%;
                 height: 100%;
                 border-radius: 60px;
 
@@ -53,7 +53,7 @@ export const SectionStyles = styled.section`
      
                 .swiper{
                     height: 100%;   
-                    border-radius: 0px;
+                    border-radius: 10px;
                     background-color: rgba(255,255,255, .6);
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -77,16 +77,16 @@ export const SectionStyles = styled.section`
                                 position: relative;
                                 z-index: 16;
 
-                                @media (min-width: 967px) {
+                                @media screen and (min-width: 967px) {
                                     width: 35%;
                                 }
 
                                 img{
                                     width: auto;
-                                    height: 85%;
+                                    height: 70%;
                                     filter: drop-shadow(8px 4px 10px black);
 
-                                    @media (min-width: 967px) {
+                                    @media screen and (min-width: 967px) {
                                         height: 90%;
                                     }
                                 }
@@ -114,7 +114,7 @@ export const SectionStyles = styled.section`
                                 position: relative;
                                 z-index: 15;
 
-                                @media (min-width: 967px) {
+                                @media screen and (min-width: 967px) {
                                     width: 65%;
                                     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
                                 }
@@ -131,13 +131,20 @@ export const SectionStyles = styled.section`
                                         height: 100%;
  
                                         h1{
-                                            font-size 2.5em;
-                                            margin-right: 0px;
+                                            font-size 2em;
+                                            margin-right: 20px;
+                                            margin-bottom: 30px;
                                             text-align: center;
+
+                                            @media screen and (min-width: 640px) {
+                                                font-size 2.5em;
+                                            }
+                        
 
                                             @media screen and (min-width: 968px){
                                                 font-size 3em;
                                                 margin-right: 30px;
+                                                margin-bottom: 0px;
                                             }
                                         }
     
@@ -161,7 +168,7 @@ export const SectionStyles = styled.section`
                                             display: flex;
                                             justify-content: center;
 
-                                            @media (min-width: 967px) {
+                                            @media screen and (min-width: 967px) {
                                                 margin-top: 50px;
                                                 height: 120px;
                                             }
@@ -175,7 +182,7 @@ export const SectionStyles = styled.section`
                                                 grid-column-gap: 0px;
                                                 grid-row-gap: 20px;
 
-                                                @media (min-width: 967px) {
+                                                @media screen and (min-width: 967px) {
                                                     height: 120px;
                                                     width: 100%;
                                                     grid-template-columns: repeat(5, 1fr);
@@ -197,7 +204,7 @@ export const SectionStyles = styled.section`
                                                     img{
                                                         width: 50%;
                                                         height: 50%;
-                                                        opacity: 0.6;
+                                                        opacity: 0.8;
                                                     }
                                                     
                                                     @media screen and (min-width: 968px){
@@ -249,8 +256,12 @@ export const SectionStyles = styled.section`
                                                 border-radius: 5px;
                                                 font-family: "Arial", "sans-serif";
                                                 font-weight: bold;
-                                                font-size: 18px;
+                                                font-size: 12px;
                                                 cursor: pointer;
+
+                                                @media screen and (min-width: 390px){
+                                                    font-size: 18px;
+                                                }
         
                                                 :hover{
                                                     background-color: transparent;
@@ -299,6 +310,147 @@ export const SectionStyles = styled.section`
       }
       
       .swiper-pagination-bullet-active {
-        background-color: white;
+        background-color: #04adee;
       }
+
+
+
+
+      .productBard-p1{
+        width: 100%;
+        height: 55%;
+        clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 15;
+
+        @media (min-width: 967px) {
+            clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+        }
+
+        .textContainer{
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                
+            .containerContent{
+                width: 100%;
+                height: 100%;
+
+                h1{
+                    font-size 2em;
+                    margin-right: 0px;
+                    text-align: center;
+
+                    @media screen and (min-width: 640px) {
+                        font-size 2.5em;
+                    }
+
+                    @media screen and (min-width: 968px){
+                        font-size 3em;
+                    }
+                }
+
+                .description{
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 1.1em;
+                    font-family: 'Arial';
+                    width: 95%;
+                    display: none;
+                    height: auto;
+                    margin-bottom: 5px;
+
+                    @media screen and (min-width: 968px){
+                        display: block;
+                    }
+                }
+        
+                .btn-learn-Container{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 15px;
+                    margin-top: 30px;
+
+                    @media screen and (min-width: 968px){
+                        margin-top: 0px;
+                    }
+
+                    .btn-Learn{
+                        padding: 10px 20px;;
+                        background-color: black;
+                        color: white;
+                        border: 3px solid black;
+                        border-radius: 5px;
+                        font-family: "Arial", "sans-serif";
+                        font-weight: bold;
+                        font-size: 18px;
+                        cursor: pointer;
+
+                        :hover{
+                            background-color: transparent;
+                            color: black;
+                        }
+                    }
+                }
+
+                .ingredients{
+                    font-weight: bold;
+                    text-align: center;
+                    font-size: 0.75em;
+                    font-family: "Arial", "sans-serif";
+                    width: 90%;
+                    display: none;
+                    margin: 0 auto;
+
+                    @media screen and (min-width: 968px){
+                        display: block;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .productBard-p2{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 16;
+
+
+        .barsProduct{
+            transform: scale(1);
+            margin-top: -80px;
+            width: 300px;
+            height: auto;
+            filter: drop-shadow(8px 4px 10px black);
+
+            @media screen and(min-width: 640px) {
+                transform: scale(1.2);
+            }
+
+            @media screen and (min-width: 967px) {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .block{
+        display: block !important;
+    }
+
 `;
+
+
+
+

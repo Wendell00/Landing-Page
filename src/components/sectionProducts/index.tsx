@@ -16,7 +16,7 @@ import { InfoProduct } from '../infoProduct'
 
 export const SectionProducts = () => {
 
-  const {modal, setModal} = useContext(FormContext)
+  const {modal, setModal, setModalNum} = useContext(FormContext)
 
   const [bottle50, setBottle50] = useState('./bottle50/mountainberryblast.png')  
   const [bottleZero, setBottleZero] = useState('./productZero/zswhitecherry.png')  
@@ -79,28 +79,31 @@ export const SectionProducts = () => {
                         <div className="circles-p1">
                             <div className="blueCircle circle1" 
                                 onClick={() =>{handleClick('./bottle50/mountainberryblast.png', '50')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="orangeCircle circle2" 
                                 onClick={() =>{handleClick('./bottle50/orange.png', '50')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="whiteCircle circle3" 
                                 onClick={() =>{handleClick('./bottle50/whitecherry.png', '50')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="greenCircle circle4" 
                                 onClick={() =>{handleClick('./bottle50/melon.png', '50')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="purpleCircle circle5" 
                                 onClick={() =>{handleClick('./bottle50/grape.png', '50')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                         </div>
                         </div>
 
                         <div>
-                        <button className="btn-Learn" onClick={handleClickModal} >LEAN MORE</button>
+                        <button className="btn-Learn" onClick={() =>{
+                          handleClickModal()
+                          setModalNum(1)
+                        }} >LEAN MORE</button>
                         </div>
                         <p className="ingredients">
                         *Per 12 fl oz: POWERADE • 240mg (Sodium), 80mg
@@ -127,28 +130,31 @@ export const SectionProducts = () => {
                         <div className="circles-p1">
                             <div className="whiteCircle circle1" 
                                 onClick={() =>{handleClick('./productZero/zswhitecherry.png', 'zero')}}>
-                               <img src="./iconForCircle.png"/> </div>
+                               <img src="./iconForCircle.svg"/> </div>
 
                             <div className="blueCircle circle2"
                                 onClick={() =>{handleClick('./productZero/zsmixedberry.png', 'zero')}}>
-                               <img src="./iconForCircle.png"/> </div>
+                               <img src="./iconForCircle.svg"/> </div>
 
                             <div className="orangeCircle circle3" 
                                 onClick={() =>{handleClick('./productZero/zsorange.png', 'zero')}}>
-                               <img src="./iconForCircle.png"/> </div>
+                               <img src="./iconForCircle.svg"/> </div>
 
                             <div className="redCircle circle4" 
                                 onClick={() =>{handleClick('./productZero/zsfruitpunch.png', 'zero')}}>
-                               <img src="./iconForCircle.png"/> </div>
+                               <img src="./iconForCircle.svg"/> </div>
 
                             <div className="purpleCircle circle5" 
                                 onClick={() =>{handleClick('./productZero/zsgrape.png', 'zero')}}>
-                               <img src="./iconForCircle.png"/> </div>
+                               <img src="./iconForCircle.svg"/> </div>
                         </div>
                         </div>
 
                         <div>
-                        <button className="btn-Learn" onClick={handleClickModal}>LEAN MORE</button>
+                        <button className="btn-Learn" onClick={() =>{
+                          handleClickModal()
+                          setModalNum(2)
+                        }} >LEAN MORE</button>
                         </div>
                         <p className="ingredients">
                         water, less than 1% of: citric acid, salt and mono-potassium phosphate and magnesium chloride and calcium chloride (electrolyte sources), natural flavors, sucralose, acesulfame potassium, vitamin b3 (niacinamide), vitamin b6 (pyridoxine hydrochloride), vitamin b12 (cyanocobalamin), blue 1, ascorbic acid (to protect taste), calcium disodium edta (to protect color).
@@ -158,27 +164,30 @@ export const SectionProducts = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="p1">
-                  <img src="./productBars.png" alt="" className="barsProduct"/>
-                </div>
-                <div className="p2 blackBg">
+              <SwiperSlide className="block">
+                <div className="productBard-p1 blackBg">
                   <div className="textContainer">
-                    <div className="containerContent">
-                        <h1 className="colorWhite">POWERADE® SPORTS FREEZER BARS</h1>
-                        <p className="description colorWhite">
-                        Powerade Sports Freezer Bars are the perfect way to refuel after playing sports, exercising or enjoying outdoor activities so you can keep going strong.
-                        </p>
+                      <div className="containerContent">
+                          <h1 className="colorWhite">POWERADE® SPORTS FREEZER BARS</h1>
+                          <p className="description colorWhite">
+                          Powerade Sports Freezer Bars are the perfect way to refuel after playing sports, exercising or enjoying outdoor activities so you can keep going strong.
+                          </p>
 
-                        <div className="mt-20">
-                          <button className="btn-Learn" onClick={handleClickModal}>LEAN MORE</button>
-                        </div>
-                        <p className="ingredients colorWhite mt-20">
-                        water, high fructose corn syrup, contains 2% or less of the following: natural flavors, citric acid, sodium citrate, sodium benzoate and potassium sorbate (preservatives), monopotassium phosphate, calcium lactate, calcium gluconate, magnesium oxide, dicalcium phosphate, niacinamide (vitamin b3), pyridoxine hydrochloride (vitamin b6), cyanocobalamin (vitamin b12), red 40, blue 1.
-                        </p>
-                    </div>
-                    
+                          <div className="btn-learn-Container">
+                            <button className="btn-Learn" onClick={() =>{
+                            handleClickModal()
+                            setModalNum(3)
+                          }} >LEAN MORE</button>
+                          </div>
+                          <p className="ingredients colorWhite mt-20">
+                          water, high fructose corn syrup, contains 2% or less of the following: natural flavors, citric acid, sodium citrate, sodium benzoate and potassium sorbate (preservatives), monopotassium phosphate, calcium lactate, calcium gluconate, magnesium oxide, dicalcium phosphate, niacinamide (vitamin b3), pyridoxine hydrochloride (vitamin b6), cyanocobalamin (vitamin b12), red 40, blue 1.
+                          </p>
+                          
+                      </div>
                   </div>
+                </div>
+                <div className="productBard-p2">
+                  <img src="./productBars.png" alt="" className="barsProduct"/>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
@@ -197,28 +206,31 @@ export const SectionProducts = () => {
                         <div className="circles-p1">
                             <div className="limeCircle circle1" 
                                onClick={() =>{handleClick('./power500ml/powerLime.png', 'power500')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="orangeCircle circle2" 
                                onClick={() =>{handleClick('./power500ml/powerOrange.png', 'power500')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="purpleCircle circle3" 
                                onClick={() =>{handleClick('./power500ml/powerPurple.png', 'power500')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="blueCircle circle4" 
                                onClick={() =>{handleClick('./power500ml/powerBlue.png', 'power500')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                               
                             <div className="redCircle circle5" 
                                onClick={() =>{handleClick('./power500ml/powerRed.png', 'power500')}}>
-                              <img src="./iconForCircle.png"/> </div>
+                              <img src="./iconForCircle.svg"/> </div>
                         </div>
                         </div>
 
                         <div>
-                        <button className="btn-Learn" onClick={handleClickModal}>LEAN MORE</button>
+                        <button className="btn-Learn" onClick={() =>{
+                          handleClickModal()
+                          setModalNum(4)
+                        }} >LEAN MORE</button>
                         </div>
                         <p className="ingredients">
                         Water, dextrose, acidity regulators (citric acid, malic acid, trisodium citrate, tripotassium citrate), fructose, stabilizers (Action Gum, E445), sweeteners (aspartame, acesulfame K), flavoring agents, vitamin B6.

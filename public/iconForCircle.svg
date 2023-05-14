@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="312px" height="368px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+
+<style type="text/css">
+	@keyframes lineGrow {
+		50%{
+			stroke-dashoffset: 0;
+		}
+        100%{
+            stroke-dashoffset: 400;
+        }
+	}
+
+	.st0{
+		fill:#fff;
+		stroke:#000;		
+        stroke-width:8;
+		stroke-miterlimit:5;
+		stroke-dasharray: 400;
+		stroke-dashoffset: 400;
+		animation: lineGrow 3s infinite ease-out;
+	}
+
+	.st0:hover{
+		stroke:#04adee;
+	}
+
+</style>
+
+<path style="opacity:1" fill="#fefffe" class='st0' d="M 49.5,4.5 C 135.694,61.7604 221.36,119.76 306.5,178.5C 303.247,182.129 299.58,185.296 295.5,188C 200.167,245.333 104.833,302.667 9.5,360C 6.97498,360.896 4.80832,360.396 3,358.5C 2.72567,355.351 3.39233,352.351 5,349.5C 29.3333,295.5 53.6667,241.5 78,187.5C 111.384,184.278 144.884,181.944 178.5,180.5C 178.261,178.533 178.594,176.699 179.5,175C 135.547,120.258 91.7132,65.4246 48,10.5C 47.5906,8.30492 48.0906,6.30492 49.5,4.5 Z"/></g>
+</svg>

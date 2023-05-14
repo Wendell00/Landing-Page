@@ -17,21 +17,46 @@ export const SectionStyles = styled.section`
             z-index: 1;
         }
 
-        .title-partners{
+        .title-partners-container{
             width: 100%;
-            height: 50px;
-            padding-left: 105px;
-            font-size: 2em;
-            font-weight: bold;
-            color: white;
-            position: relative;
-            z-index: 2;
+            height: auto;
+            display: flex;
+            justify-content: center;
 
+            .title-partners{
+                width: 100%;
+                height: 50px;
+                font-size: 1.6em;
+                font-weight: bold;
+                color: white;
+                position: relative;
+                z-index: 2;
+                text-align: center;
+    
+                
+                @media screen and (min-width: 340px){
+                    font-size: 2em;
+                }
+    
+                @media screen and (min-width: 708px){
+                    font-size: 2.5em;
+                }
+    
+                @media screen and (min-width: 968px){
+                    text-align: start;
+                    font-size: 2em;
+                }
+    
+                @media screen and (min-width: 1200px){
+                    width: 1200px;
+                }
+    
+            }
         }
 
         .container {
             display: grid;
-            width: 100%;
+            width: 1200px;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             justify-content: center;
@@ -40,6 +65,10 @@ export const SectionStyles = styled.section`
             padding-top: 40px;
             position: relative;
             z-index: 2;
+
+            @media screen and (min-width: 1200px){
+                width: 1200px;
+            }
           }
           
           .column {
