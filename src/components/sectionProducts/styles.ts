@@ -83,12 +83,24 @@ export const SectionStyles = styled.section`
 
                                 img{
                                     width: auto;
-                                    height: 90%;
+                                    height: 85%;
                                     filter: drop-shadow(8px 4px 10px black);
+
+                                    @media (min-width: 967px) {
+                                        height: 90%;
+                                    }
                                 }
 
                                 .barsProduct{
-                                    transform: scale(1.2) translateX(40px);
+                                    transform: scale(0.8) translateX(30px);
+
+                                    @media (min-width: 640px) {
+                                        transform: scale(1.1) translateX(30px);
+                                    }
+
+                                    @media (min-width: 967px) {
+                                        transform: scale(1.2) translateX(40px);
+                                    }
                                 }
                             }
 
@@ -172,12 +184,21 @@ export const SectionStyles = styled.section`
                                                     grid-row-gap: 0px;
                                                 }
                                     
-                                                button{
+                                                div{
                                                     width: 70%;
                                                     height: 9.7vw;
                                                     border-radius: 100%;
                                                     border: 2px solid black;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
                                                     cursor: pointer;
+
+                                                    img{
+                                                        width: 50%;
+                                                        height: 50%;
+                                                        opacity: 0.6;
+                                                    }
                                                     
                                                     @media screen and (min-width: 968px){
                                                         width: 64px;
@@ -241,10 +262,11 @@ export const SectionStyles = styled.section`
                                         .ingredients{
                                             font-weight: bold;
                                             text-align: center;
-                                            font-size: 0.8em;
+                                            font-size: 0.75em;
                                             font-family: "Arial", "sans-serif";
-                                            width: 95%;
+                                            width: 90%;
                                             display: none;
+                                            margin: 0 auto;
     
                                             @media screen and (min-width: 968px){
                                                 display: block;

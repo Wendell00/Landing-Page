@@ -16,8 +16,6 @@ export const NavBar = () =>{
         };
     }, []);
 
-    console.log('atualizou')
-
     useEffect(() => {
         window.addEventListener('resize', handleResize);
         return () => {

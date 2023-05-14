@@ -10,7 +10,7 @@ export const NavBarStyles = styled.nav`
     display: flex;
     justify-content: center;
     transition: .3s;
-    z-index: 999;
+    z-index: 10;
 
     .navContainerMobile{
       width: 100vw;

@@ -10,7 +10,13 @@ import 'swiper/css/pagination'
 // Import Swiper styles
 import "swiper/css";
 
+import { useContext } from 'react'
+import { FormContext } from '../../contexts/FormContext'
+import { InfoProduct } from '../infoProduct'
+
 export const SectionProducts = () => {
+
+  const {modal, setModal} = useContext(FormContext)
 
   const [bottle50, setBottle50] = useState('./bottle50/mountainberryblast.png')  
   const [bottleZero, setBottleZero] = useState('./productZero/zswhitecherry.png')  
@@ -22,8 +28,14 @@ export const SectionProducts = () => {
     else if(product =='power500') setPower500(url)
   }
 
+  function handleClickModal(){
+    setModal(true)
+  }
+
+  console.log(modal)
+
   return (
-    <SectionStyles>
+      <SectionStyles>
       <div className="productsContainer" id="products">
         <div className="title-products">
           <h1>
@@ -65,16 +77,30 @@ export const SectionProducts = () => {
 
                         <div className="changeBottleContainer">
                         <div className="circles-p1">
-                            <button className="blueCircle circle1" onClick={() =>{handleClick('./bottle50/mountainberryblast.png', '50')}}></button>
-                            <button className="orangeCircle circle2" onClick={() =>{handleClick('./bottle50/orange.png', '50')}}></button>
-                            <button className="whiteCircle circle3" onClick={() =>{handleClick('./bottle50/whitecherry.png', '50')}}></button>
-                            <button className="greenCircle circle4" onClick={() =>{handleClick('./bottle50/melon.png', '50')}}></button>
-                            <button className="purpleCircle circle5" onClick={() =>{handleClick('./bottle50/grape.png', '50')}}></button>
+                            <div className="blueCircle circle1" 
+                                onClick={() =>{handleClick('./bottle50/mountainberryblast.png', '50')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="orangeCircle circle2" 
+                                onClick={() =>{handleClick('./bottle50/orange.png', '50')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="whiteCircle circle3" 
+                                onClick={() =>{handleClick('./bottle50/whitecherry.png', '50')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="greenCircle circle4" 
+                                onClick={() =>{handleClick('./bottle50/melon.png', '50')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="purpleCircle circle5" 
+                                onClick={() =>{handleClick('./bottle50/grape.png', '50')}}>
+                              <img src="./iconForCircle.png"/> </div>
                         </div>
                         </div>
 
                         <div>
-                        <button className="btn-Learn">LEAN MORE</button>
+                        <button className="btn-Learn" onClick={handleClickModal} >LEAN MORE</button>
                         </div>
                         <p className="ingredients">
                         *Per 12 fl oz: POWERADE • 240mg (Sodium), 80mg
@@ -99,16 +125,30 @@ export const SectionProducts = () => {
 
                         <div className="changeBottleContainer">
                         <div className="circles-p1">
-                            <button className="whiteCircle circle1" onClick={() =>{handleClick('./productZero/zswhitecherry.png', 'zero')}}></button>
-                            <button className="blueCircle circle2" onClick={() =>{handleClick('./productZero/zsmixedberry.png', 'zero')}}></button>
-                            <button className="orangeCircle circle3" onClick={() =>{handleClick('./productZero/zsorange.png', 'zero')}}></button>
-                            <button className="redCircle circle4" onClick={() =>{handleClick('./productZero/zsfruitpunch.png', 'zero')}}></button>
-                            <button className="purpleCircle circle5" onClick={() =>{handleClick('./productZero/zsgrape.png', 'zero')}}></button>
+                            <div className="whiteCircle circle1" 
+                                onClick={() =>{handleClick('./productZero/zswhitecherry.png', 'zero')}}>
+                               <img src="./iconForCircle.png"/> </div>
+
+                            <div className="blueCircle circle2"
+                                onClick={() =>{handleClick('./productZero/zsmixedberry.png', 'zero')}}>
+                               <img src="./iconForCircle.png"/> </div>
+
+                            <div className="orangeCircle circle3" 
+                                onClick={() =>{handleClick('./productZero/zsorange.png', 'zero')}}>
+                               <img src="./iconForCircle.png"/> </div>
+
+                            <div className="redCircle circle4" 
+                                onClick={() =>{handleClick('./productZero/zsfruitpunch.png', 'zero')}}>
+                               <img src="./iconForCircle.png"/> </div>
+
+                            <div className="purpleCircle circle5" 
+                                onClick={() =>{handleClick('./productZero/zsgrape.png', 'zero')}}>
+                               <img src="./iconForCircle.png"/> </div>
                         </div>
                         </div>
 
                         <div>
-                        <button className="btn-Learn">LEAN MORE</button>
+                        <button className="btn-Learn" onClick={handleClickModal}>LEAN MORE</button>
                         </div>
                         <p className="ingredients">
                         water, less than 1% of: citric acid, salt and mono-potassium phosphate and magnesium chloride and calcium chloride (electrolyte sources), natural flavors, sucralose, acesulfame potassium, vitamin b3 (niacinamide), vitamin b6 (pyridoxine hydrochloride), vitamin b12 (cyanocobalamin), blue 1, ascorbic acid (to protect taste), calcium disodium edta (to protect color).
@@ -131,7 +171,7 @@ export const SectionProducts = () => {
                         </p>
 
                         <div className="mt-20">
-                          <button className="btn-Learn">LEAN MORE</button>
+                          <button className="btn-Learn" onClick={handleClickModal}>LEAN MORE</button>
                         </div>
                         <p className="ingredients colorWhite mt-20">
                         water, high fructose corn syrup, contains 2% or less of the following: natural flavors, citric acid, sodium citrate, sodium benzoate and potassium sorbate (preservatives), monopotassium phosphate, calcium lactate, calcium gluconate, magnesium oxide, dicalcium phosphate, niacinamide (vitamin b3), pyridoxine hydrochloride (vitamin b6), cyanocobalamin (vitamin b12), red 40, blue 1.
@@ -155,16 +195,30 @@ export const SectionProducts = () => {
 
                         <div className="changeBottleContainer">
                         <div className="circles-p1">
-                            <button className="limeCircle circle1" onClick={() =>{handleClick('./power500ml/powerLime.png', 'power500')}}></button>
-                            <button className="orangeCircle circle2" onClick={() =>{handleClick('./power500ml/powerOrange.png', 'power500')}}></button>
-                            <button className="purpleCircle circle3" onClick={() =>{handleClick('./power500ml/powerPurple.png', 'power500')}}></button>
-                            <button className="blueCircle circle4" onClick={() =>{handleClick('./power500ml/powerBlue.png', 'power500')}}></button>
-                            <button className="redCircle circle5" onClick={() =>{handleClick('./power500ml/powerRed.png', 'power500')}}></button>
+                            <div className="limeCircle circle1" 
+                               onClick={() =>{handleClick('./power500ml/powerLime.png', 'power500')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="orangeCircle circle2" 
+                               onClick={() =>{handleClick('./power500ml/powerOrange.png', 'power500')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="purpleCircle circle3" 
+                               onClick={() =>{handleClick('./power500ml/powerPurple.png', 'power500')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="blueCircle circle4" 
+                               onClick={() =>{handleClick('./power500ml/powerBlue.png', 'power500')}}>
+                              <img src="./iconForCircle.png"/> </div>
+                              
+                            <div className="redCircle circle5" 
+                               onClick={() =>{handleClick('./power500ml/powerRed.png', 'power500')}}>
+                              <img src="./iconForCircle.png"/> </div>
                         </div>
                         </div>
 
                         <div>
-                        <button className="btn-Learn">LEAN MORE</button>
+                        <button className="btn-Learn" onClick={handleClickModal}>LEAN MORE</button>
                         </div>
                         <p className="ingredients">
                         Water, dextrose, acidity regulators (citric acid, malic acid, trisodium citrate, tripotassium citrate), fructose, stabilizers (Action Gum, E445), sweeteners (aspartame, acesulfame K), flavoring agents, vitamin B6.
