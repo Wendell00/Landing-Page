@@ -30,7 +30,7 @@ export const SectionPartners = () => {
             <h2>TEAM USA</h2>
             <p className="desc-1">Worldwide Partner</p>
           </div>
-          <div className="column">
+          <div className="column last">
             <img src="./partners/fifa.png" alt="Fifa - Logo"/>
             <h2>FIFA</h2>
             <p className="desc-1">Official Partner of FIFA</p>

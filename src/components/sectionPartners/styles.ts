@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const SectionStyles = styled.section`
     .partnersContainer{
         width: 100vw;
-        height: 749px;
+        height: auto;
+        min-height: 749px;
         background-repeat: no-repeat;
         padding-top: 100px;
         background-color: black;
@@ -13,8 +14,18 @@ export const SectionStyles = styled.section`
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%) scale(5);
             z-index: 1;
+
+            @media screen and (min-width: 630px){
+                transform: translateX(-50%) translateY(-50%) scale(2.4);
+                width: 50%;
+            }
+
+            @media screen and (min-width: 1200px){
+                transform: translateX(-50%) translateY(-50%) scale(1.2);
+                width: 1200px;
+            }
         }
 
         .title-partners-container{
@@ -35,7 +46,7 @@ export const SectionStyles = styled.section`
     
                 
                 @media screen and (min-width: 340px){
-                    font-size: 2em;
+                    font-size: 1.6em;
                 }
     
                 @media screen and (min-width: 708px){
@@ -56,8 +67,8 @@ export const SectionStyles = styled.section`
 
         .container {
             display: grid;
-            width: 1200px;
-            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            grid-template-columns: repeat(1, 4fr);
             gap: 20px;
             justify-content: center;
             margin: 0 auto;
@@ -66,17 +77,40 @@ export const SectionStyles = styled.section`
             position: relative;
             z-index: 2;
 
+
+            @media screen and (min-width: 630px){
+                grid-template-columns: repeat(2, 2fr);
+            }
+
             @media screen and (min-width: 1200px){
+                grid-template-columns: repeat(4, 1fr);
                 width: 1200px;
             }
           }
           
+          .last{
+            margin-bottom: 80px;
+
+            @media screen and (min-width: 1200px){
+                margin-bottom: 0px;
+            }
+          }
+
           .column {
+            width: 100%;
             text-align: center;
 
             img{
-                width: 100%;
+                width: 50%;
                 height: auto;
+
+                @media screen and (min-width: 630px){
+                    width: 50%;
+                }
+                
+                @media screen and (min-width: 1200px){
+                    width: 100%;
+                }
             }
 
             h2{
