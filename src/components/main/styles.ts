@@ -13,8 +13,8 @@ export const MainStyles = styled.main`
     justify-content: center;
     
     .bg-cont{
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       position: fixed;
       display: flex;
       justify-content: center;
@@ -39,13 +39,14 @@ export const MainStyles = styled.main`
           width: 1200px;
           padding-top: 2%;
         }
+
             
         img{
           width: 100%;
           height: auto;
           opacity: 1;
           display: flex;
-          align-self: end;
+          align-self: center;
           justify-self: center;
           position: absolute;
           left: 50%; right: 50%;

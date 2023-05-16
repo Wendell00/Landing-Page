@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: "Druk-Italic";
-  src: url("./fonts/druk-super-italic.otf");
+  src: url('./assets/fonts/druk-super-italic.otf');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');

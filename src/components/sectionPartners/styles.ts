@@ -18,12 +18,12 @@ export const SectionStyles = styled.section`
             z-index: 1;
 
             @media screen and (min-width: 630px){
-                transform: translateX(-50%) translateY(-50%) scale(2.4);
+                transform: translateX(-50%) translateY(-50%) scale(1);
                 width: 50%;
             }
 
             @media screen and (min-width: 1200px){
-                transform: translateX(-50%) translateY(-50%) scale(1.2);
+                transform: translateX(-50%) translateY(-50%) scale(1);
                 width: 1200px;
             }
         }
