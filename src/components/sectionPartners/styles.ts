@@ -14,7 +14,7 @@ export const SectionStyles = styled.section`
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translateX(-50%) translateY(-50%) scale(5);
+            transform: translateX(-50%) translateY(-50%);
             z-index: 1;
 
             @media screen and (min-width: 630px){
@@ -101,7 +101,7 @@ export const SectionStyles = styled.section`
             text-align: center;
 
             img{
-                width: 50%;
+                width: 30%;
                 height: auto;
 
                 @media screen and (min-width: 630px){
@@ -138,5 +138,14 @@ export const SectionStyles = styled.section`
         height: 170px;
         background-image: url('./backgroundWhite.png');
         background-position: center center;
+
+        
+        @media screen and (min-width: 540px){
+            height: 50px;
+        }
+
+        @media screen and (min-width: 768px){
+            height: 170px;
+        }
     }
 `;

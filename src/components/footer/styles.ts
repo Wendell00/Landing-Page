@@ -4,46 +4,114 @@ export const FooterStyles = styled.footer`
     .topFooter{
         width: 100vw;
         height: 283px;
-        background-image: url('./footer/footer.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-image: url('./backgroundWhite.png');
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        margin-top: -20px;
 
-        .title-footer{
+        .imgFooter{
             width: 100%;
-            height: 50px;
-            padding-left: 105px;
-            font-size: 2em;
-            font-weight: bold;
-            color: black;
-            position: relative;
-            z-index: 2;
-        }
+            height: 100%;
+            background-image: url('./footer/footerMobile.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
 
-        .btn-Learn{
-            padding: 15px 60px;
-            background-color: black;
-            color: white;
-            border: 3px solid black;
-            border-radius: 5px;
-            font-family: "Arial", "sans-serif";
-            font-weight: bold;
-            font-size: 18px;
-            cursor: pointer;
-
-            :hover{
-                background-color: transparent;
-                color: black;
+            @media screen and (min-width: 540px){
+                height: 477px;
             }
+
+            @media screen and (min-width: 768px){
+                max-width: 1920px;
+                min-width: 1440px;
+                background-image: url('./footer/footer.png');
+                height: 100%;
+            }
+
+            .text-container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 0px;
+
+                @media screen and (min-width: 540px){
+                    margin-top: 60px;
+                }
+
+                @media screen and (min-width: 768px){
+                    margin-top: 0px;
+                }
+
+                .title-footer{
+                    width: 100vw;
+                    height: 50px;
+                    position: relative;
+                    z-index: 2;
+
+                    @media screen and (min-width: 1200px){
+                        width: 1200px;
+                    }
+
+                    .title-section{
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: black;
+                        font-family: "Druk-Italic";
+                        text-align: center;
+
+                        @media screen and (min-width: 768px){
+                            text-align: start;
+                            font-size: 2em;
+                        }
+                    }
+
+                    .btn-Learn{
+                        padding: 15px 60px;
+                        background-color: black;
+                        margin-left: 10%;
+                        width: 80vw;
+                        color: white;
+                        border: 3px solid black;
+                        border-radius: 5px;
+                        font-family: "Arial", "sans-serif";
+                        font-weight: bold;
+                        font-size: 18px;
+                        cursor: pointer;
+
+                        @media screen and (min-width: 768px){
+                            width: auto;
+                            margin-left: 0px;
+                        }
+            
+                        :hover{
+                            background-color: transparent;
+                            color: black;
+                        }
+                    }
+                }
+            }   
         }
     }
 
     footer{
+        margin-top: 0px;
         width: 100vw;
         height: 400px;
         background-color: black;
         padding-top: 50px;
         display: flex;
         justify-content: center;
+        position: relative;
+        z-index: 10;
+
+        @media screen and (min-width: 540px){
+            margin-top: 120px;
+        }
+
+        @media screen and (min-width: 768px){
+            margin-top: 0px;
+        }
 
         .container{
             width: 100%;
@@ -56,22 +124,30 @@ export const FooterStyles = styled.footer`
 
                 img{
                     width: auto;
-                    height: 50px; 
+                    height: 40px; 
+
+                    @media screen and (min-width: 540px){
+                        height: 50px; 
+                    }
                 }
             }
 
             .textContainer{
-                width: 800px;
+                width: 100%;
                 height: 70%;
                 margin: 0 auto;
                 text-align: center;
         
                 h3{
                     margin-top: 20px;
-                    font-size: 1.2em;
+                    font-size: 1em;
                     font-weight: 500;
                     font-family: 'Montserrat', sans-serif;
                     color: white;
+
+                    @media screen and (min-width: 540px){
+                        font-size: 1.2em;
+                    }
                 }
 
                 ul{
@@ -92,10 +168,14 @@ export const FooterStyles = styled.footer`
                     margin-top: 80px;
 
                     p{
-                        font-size: 1em;
+                        font-size: 0.8em;
                         font-weight: 500;
                         font-family: 'Montserrat', sans-serif;
                         color: white;
+
+                        @media screen and (min-width: 540px){
+                            font-size: 1em;
+                        }
 
                         span{
                             color: #04adee;

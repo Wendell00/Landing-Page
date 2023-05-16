@@ -5,12 +5,16 @@ export const Footer = () => {
   return (
     <FooterStyles>
       <div className="topFooter" id="contact">
-        <div className="title-footer">
-              <h1>
-                <b>FIND POWERADE NEAR YOU</b>
-              </h1>
-              <button className="btn-Learn">FIND NOW</button>
-        </div>
+        <div className="imgFooter">
+          <div className="text-container">
+            <div className="title-footer">
+                    <h1 className="title-section">
+                      FIND POWERADE NEAR YOU
+                    </h1>
+                  <button className="btn-Learn">FIND NOW</button>
+            </div>
+          </div>
+        </div>  
       </div>
       <footer>
         <div className="container">
